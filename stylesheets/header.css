@@ -1,0 +1,18 @@
+header {
+  background-color: var(--secondary-color-1);
+  color: var(--text-white);
+  text-align: right; /* Align header links to the right */
+  padding: 2rem 1rem;
+  width: 100%;
+  font-weight: bold; /* Increase header thickness */
+  box-sizing: border-box;
+}
+
+.header-link:hover {
+  background-color: var(--text-white);
+  color: var(--secondary-color-1);
+}
+
+.menu-icon {
+  display: none;
+}

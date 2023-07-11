@@ -1,0 +1,24 @@
+.name-banner {
+  font-size: 2rem;
+}
+
+#hero {
+  padding: 6rem 5rem;
+}
+
+.hero-description {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-description p {
+  text-align: left;
+  flex-basis: 50%;
+}
+
+.hero-image {
+  max-width: 24rem;
+  max-height: 24rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+}
