@@ -8,6 +8,8 @@
 
 section {
   min-height: 50vh;
+  padding: 3rem 5rem;
+  text-align: center; /* Center align section content */
 }
 
 .section-title {
@@ -23,11 +25,6 @@ section:nth-child(odd) {
 section:nth-child(even) {
   background-color: var(--secondary-color-2);
   color: var(--text-black);
-}
-
-#about, #projects, #contact, #faq {
-  padding: 3rem 5rem;
-  text-align: center; /* Center align section content */
 }
 
 .hidden {

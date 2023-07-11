@@ -21,16 +21,6 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  display: inline;
-  padding: 1rem;
-}
-
-img {
-  padding: 0.5rem;
-  border: 10px solid transparent;
-}
-
 svg {
   min-width: 2rem;
   height: 2rem;

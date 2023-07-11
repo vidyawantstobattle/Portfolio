@@ -8,11 +8,51 @@ header {
   box-sizing: border-box;
 }
 
+.header-link {
+  display: inline;
+  padding: 1rem;
+  opacity: 0.8;
+  border-radius: 10%;
+  transition: all 0.25s ease-in-out;
+}
+
+.logo {
+  float: left;
+}
+
 .header-link:hover {
   background-color: var(--text-white);
   color: var(--secondary-color-1);
+  opacity: 1;
 }
 
 .menu-icon {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    padding: 1rem;
+    display: inline;
+  }
+
+  .header-link {
+    display: none;
+  }
+
+  .responsive {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .responsive .menu-icon {
+    margin-bottom: 1rem;
+  }
+
+  .responsive .header-link {
+    display: block;
+    text-align: left;
+    border-radius: 0;
+  }
+  
 }

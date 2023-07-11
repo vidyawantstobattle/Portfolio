@@ -2,10 +2,6 @@
   font-size: 2rem;
 }
 
-#hero {
-  padding: 6rem 5rem;
-}
-
 .hero-description {
   display: flex;
   justify-content: space-evenly;
@@ -21,4 +17,10 @@
   max-height: 24rem;
   margin-left: 1rem;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-description {
+    flex-direction: column;
+  }
 }
