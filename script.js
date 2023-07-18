@@ -9,11 +9,7 @@ accordionButtons.forEach(button => {
 
     // Toggle display of the accordion content
     const content = button.nextElementSibling;
-    if (content.style.display === 'block') {
-      content.style.display = 'none';
-    } else {
-      content.style.display = 'block';
-    }
+    content.classList.toggle('show')
   });
 });
 

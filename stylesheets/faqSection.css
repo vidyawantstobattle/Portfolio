@@ -1,9 +1,9 @@
-#faq .accordion {
+.accordion {
   max-width: 50rem;
   margin: 0 auto;
 }
 
-#faq .accordion-btn {
+.accordion-btn {
   background-color: var(--tertiary-color);
   color: var(--text-white);
   cursor: pointer;
@@ -13,24 +13,24 @@
   text-align: left;
   border: none;
   outline: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.8s ease;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
 }
 
-#faq .accordion-btn:hover {
+.accordion-btn:hover {
   background-color: var(--text-white);
   color: var(--tertiary-color);
 }
 
-#faq .accordion-btn:hover .arrow-icon {
+.accordion-btn:hover .arrow-icon {
   fill: var(--tertiary-color);
 }
 
 .arrow-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.8s ease;
   fill: var(--text-white);
 }
 
@@ -38,11 +38,21 @@
   transform: rotate(180deg);
 }
 
-#faq .accordion-content {
+.accordion-content {
   background-color: var(--secondary-color-1);
   border: 1px solid var(--tertiary-color);
-  padding: 1rem;
-  display: none;
   overflow: hidden;
   text-align: left;
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: visibility 0.8s, opacity 0.8s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  max-height: 100000rem;
+  padding: 1rem;
+  transition: visibility 0.8s, opacity 0.8s ease-in-out;
 }
