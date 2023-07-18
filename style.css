@@ -5,6 +5,7 @@
 @import "stylesheets/heroSection.css";
 @import "stylesheets/faqSection.css";
 @import "stylesheets/timeline.css";
+@import "stylesheets/skills.css";
 
 section {
   min-height: 50vh;

@@ -30,7 +30,7 @@ accordionButtons.forEach(button => {
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
-      rect.bottom*(0.75) <=
+      rect.bottom <=
         (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
@@ -40,8 +40,6 @@ accordionButtons.forEach(button => {
     items.forEach(item => {
       if(isElementInViewport(item)) {
         item.classList.add('in-view')
-      } else {
-        item.classList.remove('in-view')
       }
     })
   }

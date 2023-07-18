@@ -15,7 +15,12 @@
 .hero-image {
   max-width: 24rem;
   max-height: 24rem;
-  margin-left: 1rem;
+  border-radius: 50%;
+}
+
+.hero-image-wrapper {
+  max-width: 24rem;
+  max-height: 24rem;
   border-radius: 50%;
 }
 
