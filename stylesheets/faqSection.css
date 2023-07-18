@@ -44,15 +44,15 @@
   overflow: hidden;
   text-align: left;
   visibility: hidden;
-  max-height: 0;
   opacity: 0;
-  transition: visibility 0.8s, opacity 0.8s ease-in-out;
+  height: 0;
+  transition: visibility 0.8s linear, opacity 0.3s linear;
 }
 
 .show {
-  opacity: 1;
-  visibility: visible;
-  max-height: 100000rem;
   padding: 1rem;
-  transition: visibility 0.8s, opacity 0.8s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  transition: visibility 0.8s linear, opacity 0.3s linear;
 }
