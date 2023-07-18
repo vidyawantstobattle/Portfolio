@@ -12,7 +12,11 @@ header {
   display: inline;
   padding: 1rem;
   border-radius: 10%;
-  transition: all 0.25s ease-in-out;
+  background-image: linear-gradient(var(--text-white), var(--text-white));
+  background-size: 100% 0;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  transition: background-size .7s, color .7s, background-position .5s ease-in-out;
 }
 
 .logo {
@@ -20,9 +24,11 @@ header {
 }
 
 .header-link:hover {
-  background-color: var(--text-white);
   color: var(--secondary-color-1);
   opacity: 1;
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, color .7s, background-size .5s ease-in-out;
 }
 
 .menu-icon {

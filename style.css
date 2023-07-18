@@ -40,10 +40,10 @@ section:nth-child(even) {
   margin: 1rem;
   padding: 0.5rem;
   background-image: linear-gradient(var(--tertiary-color), var(--tertiary-color));
-  background-size: 100% 0.1rem;
+  background-size: 100% 0;
   background-repeat: no-repeat;
   background-position: 100% 0%;
-   transition: background-size .7s, background-position .5s ease-in-out;
+  transition: background-size .7s, background-position .5s ease-in-out;
 }
 
 .contact-link:hover {
