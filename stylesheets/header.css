@@ -11,7 +11,7 @@ header {
 .header-link {
   display: inline;
   padding: 1rem;
-  border-radius: 10%;
+  border-radius: 0.5rem;
   background-image: linear-gradient(var(--text-white), var(--text-white));
   background-size: 100% 0;
   background-repeat: no-repeat;

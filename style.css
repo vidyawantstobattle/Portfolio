@@ -6,6 +6,7 @@
 @import "stylesheets/faqSection.css";
 @import "stylesheets/timeline.css";
 @import "stylesheets/skills.css";
+@import "stylesheets/bubbles.css";
 
 section {
   min-height: 50vh;
@@ -39,6 +40,7 @@ section:nth-child(even) {
 .contact-link {
   margin: 1rem;
   padding: 0.5rem;
+  border-radius: 0.5rem;
   background-image: linear-gradient(var(--tertiary-color), var(--tertiary-color));
   background-size: 100% 0;
   background-repeat: no-repeat;
