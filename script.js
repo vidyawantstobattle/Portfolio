@@ -58,7 +58,7 @@ menuIcon.addEventListener("click", responsiveNav)
 
 
 // Bubbles for projects
-const SCROLL_SPEED = 1;
+const SCROLL_SPEED = 0.5;
 const CANVAS_WIDTH = 2800;
 
 const bubblesEl = document.querySelector('.bubbles');

@@ -35,6 +35,11 @@
   padding: 15px;
   background: var(--tertiary-color);
   border-radius: 2%;
+  animation: floating 3s ease-in infinite;
+}
+
+.timeline ul li div:hover {
+  animation-play-state: paused;
 }
 
 .timeline ul li div::before {

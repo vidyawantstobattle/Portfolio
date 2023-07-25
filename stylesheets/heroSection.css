@@ -22,7 +22,11 @@
   max-width: 24rem;
   max-height: 24rem;
   border-radius: 50%;
-  animation: floating 2s ease-in-out infinite
+  animation: floating 3s ease-in infinite;
+}
+
+.hero-image-wrapper:hover {
+  animation-play-state: paused;
 }
 
 @media screen and (max-width: 600px) {
@@ -33,6 +37,7 @@
 
 @keyframes floating {
   0% { transform: translate(0,  0); }
-  50%  { transform: translate(0, 0.5rem); }
-  100%   { transform: translate(0, -0); }   
+  25%  { transform: translate(0, 0.5rem); }
+  75%  { transform: translate(0, -0.5rem); }
+  100%  { transform: translate(0, 0); }
 }

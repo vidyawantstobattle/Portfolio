@@ -20,7 +20,7 @@ header {
 }
 
 .logo {
-  float: left;
+  background-image: url('../assets/logo.png');
 }
 
 .header-link:hover {

@@ -1,6 +1,8 @@
 .bubble-wrap {
   overflow: hidden;
   height: 600px;
+  /* only for first iteration */
+  margin-top: 1rem;
 }
 
 .bubbles {
@@ -19,7 +21,7 @@
     0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.logo01 { background-image:  url('../assets/laptop.png'); }
+.logo01 { background-image:  url('../assets/react.png'); }
 .logo02 { background-image:  url('../assets/laptop.png'); }
 .logo03 { background-image:  url('../assets/laptop.png'); }
 .logo04 { background-image:  url('../assets/laptop.png'); }
