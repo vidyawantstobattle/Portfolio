@@ -36,6 +36,8 @@ accordionButtons.forEach(button => {
     items.forEach(item => {
       if(isElementInViewport(item)) {
         item.classList.add('in-view')
+      } else {
+        item.classList.remove('in-view')
       }
     })
   }

@@ -38,8 +38,16 @@
   animation: floating 3s ease-in infinite;
 }
 
+@keyframes floating {
+  0% { transform: translate(0,  0); }
+  25%  { transform: translate(0, 0.5rem); }
+  75%  { transform: translate(0, -0.5rem); }
+  100%  { transform: translate(0, 0); }
+}
+
 .timeline ul li div:hover {
   animation-play-state: paused;
+  scale: 1.05;
 }
 
 .timeline ul li div::before {
@@ -76,6 +84,13 @@ time {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+.timeline-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  left: 50%;
 }
 
 
