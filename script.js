@@ -50,7 +50,7 @@ accordionButtons.forEach(button => {
 // toggle header link
 const menuIcon = document.querySelector('.menu-icon')
 const header = document.querySelector('header')
-const headerLinks = document.querySelectorAll('.header-link a')
+const headerLinks = document.querySelectorAll('.header-link')
 
 function responsiveNav() {
   header.classList.toggle('responsive')
