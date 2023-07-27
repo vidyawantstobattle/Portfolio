@@ -50,13 +50,30 @@ accordionButtons.forEach(button => {
 // toggle header link
 const menuIcon = document.querySelector('.menu-icon')
 const header = document.querySelector('header')
+const headerLinks = document.querySelectorAll('.header-link a')
 
 function responsiveNav() {
   header.classList.toggle('responsive')
 }
 
-menuIcon.addEventListener("click", responsiveNav)
+function redirectFromNav() {
+  header.classList.remove('responsive')
+}
 
+menuIcon.addEventListener('click', responsiveNav)
+headerLinks.forEach(link => {
+  link.addEventListener('click', redirectFromNav)
+})
+
+//hero button
+const heroButton = document.querySelector('.hero-content-button')
+heroButton.addEventListener('mousemove', e => {
+  const rect = heroButton.getBoundingClientRect();
+  const x = (e.clientX - rect.left) * 100 / heroButton.clientWidth
+  const y = (e.clientY - rect.top) * 100 / heroButton.clientHeight
+  heroButton.style.setProperty('--mouse-x', x);
+  heroButton.style.setProperty('--mouse-y', y);
+})
 
 
 // Bubbles for projects
