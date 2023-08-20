@@ -20,13 +20,15 @@
   margin-top: 1rem;
 }
 
-.accordion-btn:hover {
-  background-color: var(--text-white);
-  color: var(--tertiary-color);
-}
+@media screen and (min-width: 600px) {
+  .accordion-btn:hover {
+    background-color: var(--text-white);
+    color: var(--tertiary-color);
+  }
 
-.accordion-btn:hover .arrow-icon {
-  fill: var(--tertiary-color);
+  .accordion-btn:hover .arrow-icon {
+    fill: var(--tertiary-color);
+  }
 }
 
 .arrow-icon {

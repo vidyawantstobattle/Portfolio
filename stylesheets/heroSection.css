@@ -27,7 +27,7 @@
   min-width: 300px;
   background-size: 200% 200%;
   background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%);
-  background-image: radial-gradient(circle, var(--secondary-color-2) 0%, var(--tertiary-color) 100%);
+  background-image: radial-gradient(circle, var(--secondary-color-2) 0%, var(--tertiary-color) 20%);
   cursor: pointer;
   border: 0.1rem solid var(--tertiary-color);
   border-radius: 1rem;
