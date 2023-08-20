@@ -36,8 +36,6 @@ accordionButtons.forEach(button => {
     items.forEach(item => {
       if(isElementInViewport(item)) {
         item.classList.add('in-view')
-      } else {
-        item.classList.remove('in-view')
       }
     })
   }
@@ -47,7 +45,7 @@ accordionButtons.forEach(button => {
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
 
-// toggle header link
+// toggle header links
 const menuIcon = document.querySelector('.menu-icon')
 const header = document.querySelector('header')
 const headerLinks = document.querySelectorAll('.header-link')
