@@ -15,10 +15,6 @@
   justify-content: center;
 }
 
-.hero-content-text {
-  text-align: left;
-}
-
 .hero-content-button {
   --mouse-x: 50;
   --mouse-y: 50;
