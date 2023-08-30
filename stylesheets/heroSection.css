@@ -31,14 +31,14 @@
 }
 
 .hero-image {
-  max-width: 24rem;
-  max-height: 24rem;
+  max-width: 20rem;
+  max-height: 20rem;
   border-radius: 50%;
 }
 
 .hero-image-wrapper {
-  max-width: 24rem;
-  max-height: 24rem;
+  max-width: 20rem;
+  max-height: 20rem;
   border-radius: 50%;
   animation: pulsing 3s ease-in infinite;
 }
