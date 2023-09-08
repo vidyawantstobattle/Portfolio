@@ -13,11 +13,16 @@
   text-align: left;
   border: none;
   outline: none;
-  transition: background-color 0.8s ease;
+  transition: background-color 0.5s ease;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.accordion-btn.active {
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -32,7 +37,7 @@
 }
 
 .arrow-icon {
-  transition: transform 0.8s ease;
+  transition: transform 0.5s ease;
   fill: var(--text-white);
 }
 
@@ -48,13 +53,14 @@
   visibility: hidden;
   opacity: 0;
   height: 0;
-  transition: visibility 0.8s linear, opacity 0.5s linear;
+  transition: opacity 0.5s linear;
 }
 
 .show {
   padding: 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
   visibility: visible;
   opacity: 1;
   height: 100%;
-  transition: visibility 0.8s linear, opacity 0.5s linear;
+  transition: visibility 0.5s linear, opacity 0.5s linear;
 }
